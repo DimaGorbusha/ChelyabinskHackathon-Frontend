@@ -6,19 +6,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: "#415167",
-        menu: "#EDF0F5",
-        accent_dark: "#C7A17A",
-        accent_light: "#F9F5E8",
-        dark_gray: "#151D28",
-        light_gray: "#EDF0F5"
+        blue: "#1455FF"
       },
       fontFamily: {
-        'nunito-bold': ['Nunito-Bold'],
-        'nunito-light': ['Nunito-Light'],
-        'nunito-semibold': ['Nunito-Semibold'],
-        'nunito-lihtitalic': ['Nunito-LightItalic'],
-        'mon-black': ['Montserrat-Black'],
+        'gothamBold': ['Gotham Pro Bold'],
+        'gothamMedium': ['Gotham Pro Medium'],
+        'gothamLight': ['Gotham Pro Light'],
+        'gotham': ['Gotham Pro'],
+      },
+      backgroundImage: {
+        'menu': "url('./img/pagesImages/main.png')",
+        'calculator': "url('./img/pagesImages/calculator.png')"
       }
     },
   },

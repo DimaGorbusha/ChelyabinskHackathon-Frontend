@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Nunito-Bold';
-  src: local('Nunito-Bold');
+  font-family: 'Gotham Pro Bold';
+  src: local('Gotham Pro Bold'), url(fonts/gothampro_bold.ttf);
 }
 
 @font-face {
-  font-family: 'Nunito-Light';
-  src: local('Nunito-Light');
+  font-family: 'Gotham Pro Light';
+  src: local('Gotham Pro Light'), url(fonts/gothampro_light.ttf);
 }
 
 @font-face {
-  font-family: 'Nunito-Semibold';
-  src: local('Nunito-Semibold');
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro'), url(fonts/gothampro.ttf);
 }
 
 @font-face {
-  font-family: 'Montserrat-Black';
-  src: local('Montserrat-Black');
+  font-family: 'Gotham Pro Medium';
+  src: local('Gotham Pro Medium'), url(fonts/gothampro_medium.ttf);
 }
 
 body {

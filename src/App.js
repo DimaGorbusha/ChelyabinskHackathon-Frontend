@@ -1,30 +1,22 @@
-import Advertisment from "./components/Advertisment";
-import Description from "./components/Description";
-import Menu from "./components/Menu";
-import CoffeeSets from "./components/CoffeeSets";
-import GiftSet from "./components/GiftSet";
-import Combo from "./components/Combo";
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Calculator } from './pages/Calculator';
+import { Main } from './pages/Main';
+import { Result } from './pages/Result';
+
+
 
 function App() {
   return (
-    <div className="bg-[#F9FBFF]">
-      <div className="flex" id="coffee">
-        <Advertisment/>
-        <Menu/>
-      </div>
-      <div id="descr">
-        <Description/>
-      </div>
-      <div id='coffeesets'>
-        <CoffeeSets/>
-      </div>
-      <div id='giftsets'>
-        <GiftSet/>
-      </div>
-      <div id='combo'>
-        <Combo/>
-      </div>
-    </div>
+  <div className="bg-menu">
+          <Router>
+            <Routes>
+              <Route path='/' element={<Main />} />
+              <Route path='/calculator' element={<Calculator />} />
+              <Route path='/result' element={<Result />} />
+            </Routes>
+          </Router>
+  </div>
   );
 }
 
